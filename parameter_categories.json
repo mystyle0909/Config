@@ -1,38 +1,58 @@
 [
   {
-    "Product":"Transmitter1",
-    "Parameter":"A",
-    "Name":"Box Type",
-    "Description":"Box type, such as size and materials"
+    "Product": "Transmitter1",
+    "Parameter": "A",
+    "Name": "Box Type",
+    "Description": "Box type, such as size and materials"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"B",
-    "Name":"Input Power",
-    "Description":"Select input power, like AC, DC"
+    "Product": "Transmitter1",
+    "Parameter": "B",
+    "Name": "Input Power",
+    "Description": "Select input power, like AC, DC"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"C",
-    "Name":"Relay Module",
-    "Description":"Relay Module"
+    "Product": "Transmitter1",
+    "Parameter": "C",
+    "Name": "Relay Module",
+    "Description": "Relay Module"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"D",
-    "Name":"Conductivity Module",
-    "Description":"Conductivity Module"
+    "Product": "Transmitter1",
+    "Parameter": "D",
+    "Name": "Conductivity Module",
+    "Description": "Conductivity Module"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"E",
-    "Name":"Output Module",
-    "Description":"Output Module"
+    "Product": "Transmitter1",
+    "Parameter": "E",
+    "Name": "Output Module",
+    "Description": "Output Module"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"F",
-    "Name":"Data Logger",
-    "Description":"Data Logger"
+    "Product": "Transmitter1",
+    "Parameter": "F",
+    "Name": "Data Logger",
+    "Description": "Data Logger"
+  },
+  {
+    "Product": 2581,
+    "Parameter": "A",
+    "Name": "Body Material"
+  },
+  {
+    "Product": "2581",
+    "Parameter": "B",
+    "Name": "Electrode Material"
+  },
+  {
+    "Product": 2581,
+    "Parameter": "C",
+    "Name": "DN Size"
+  },
+  {
+    "Product": "2581",
+    "Parameter": "C",
+    "Name": "O-Ring"
   }
 ]

@@ -1,0 +1,82 @@
+[
+  {
+    "Product": "Transmitter1",
+    "A": "E",
+    "B": 1,
+    "C": 0,
+    "D": 0,
+    "E": 0,
+    "F": 0,
+    "9-Digit Code": 159079003
+  },
+  {
+    "Product": "Transmitter1",
+    "A": "E",
+    "B": 1,
+    "C": 1,
+    "D": 0,
+    "E": 0,
+    "F": 0,
+    "9-Digit Code": 159079002
+  },
+  {
+    "Product": "Transmitter1",
+    "A": "E",
+    "B": 1,
+    "C": 1,
+    "D": 1,
+    "E": 0,
+    "F": 0,
+    "9-Digit Code": 159079005
+  },
+  {
+    "Product": "Transmitter1",
+    "A": "E",
+    "B": 1,
+    "C": 0,
+    "D": 1,
+    "E": 0,
+    "F": 0,
+    "9-Digit Code": 159079006
+  },
+  {
+    "Product": "Transmitter1",
+    "A": "E",
+    "B": 1,
+    "C": 0,
+    "D": 0,
+    "E": 2,
+    "F": 0,
+    "9-Digit Code": 159079007
+  },
+  {
+    "Product": "Transmitter1",
+    "A": "E",
+    "B": 1,
+    "C": 1,
+    "D": 0,
+    "E": 2,
+    "F": 0,
+    "9-Digit Code": 159079008
+  },
+  {
+    "Product": "Transmitter1",
+    "A": "E",
+    "B": 1,
+    "C": 1,
+    "D": 0,
+    "E": 0,
+    "F": 1,
+    "9-Digit Code": 159079009
+  },
+  {
+    "Product": "Transmitter1",
+    "A": "E",
+    "B": 1,
+    "C": 0,
+    "D": 2,
+    "E": 0,
+    "F": 0,
+    "9-Digit Code": 159079010
+  }
+]
