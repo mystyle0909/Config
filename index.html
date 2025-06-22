@@ -50,64 +50,41 @@
       border-radius: 8px;
       cursor: pointer;
     }
-    .upload-section {
-      margin-bottom: 24px;
-    }
-    .upload-section p {
-      margin-bottom: 4px;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
   <h1>Select a Product to Configure</h1>
-
-  <div class="upload-section">
-    <p>Upload <code>product_info.json</code>:</p>
-    <input type="file" accept=".json" onchange="loadJSON(event, 'product_info')" />
-
-    <p>Upload <code>parameter_categories.json</code>:</p>
-    <input type="file" accept=".json" onchange="loadJSON(event, 'parameter_categories')" />
-
-    <p>Upload <code>option_definitions.json</code>:</p>
-    <input type="file" accept=".json" onchange="loadJSON(event, 'option_definitions')" />
-
-    <p>Upload <code>valid_combinations.json</code>:</p>
-    <input type="file" accept=".json" onchange="loadJSON(event, 'valid_combinations')" />
-
-    <p>Upload <code>conflict_rules.json</code>:</p>
-    <input type="file" accept=".json" onchange="loadJSON(event, 'conflict_rules')" />
-  </div>
-
   <div class="product-grid" id="product-list"></div>
 
   <script>
-    const jsonStore = {
-      product_info: [],
-      parameter_categories: [],
-      option_definitions: [],
-      valid_combinations: [],
-      conflict_rules: []
-    };
-
-    function loadJSON(event, type) {
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        try {
-          jsonStore[type] = JSON.parse(e.target.result);
-          if (type === 'product_info') renderProductCards();
-        } catch (err) {
-          alert(`Failed to parse ${type} file.`);
-        }
-      };
-      reader.readAsText(event.target.files[0]);
+    async function fetchAndStoreJSON(url, key) {
+      const res = await fetch(url);
+      const json = await res.json();
+      localStorage.setItem(key, JSON.stringify(json));
+      return json;
     }
 
-    function renderProductCards() {
+    async function loadAllData() {
+      try {
+        const productInfo = await fetchAndStoreJSON("product_info.json", "product_info");
+        await fetchAndStoreJSON("parameter_categories.json", "parameter_categories");
+        await fetchAndStoreJSON("option_definitions.json", "option_definitions");
+        await fetchAndStoreJSON("valid_combinations.json", "valid_combinations");
+        await fetchAndStoreJSON("conflict_rules.json", "conflict_rules");
+
+        renderProductCards(productInfo);
+      } catch (err) {
+        document.getElementById("product-list").innerHTML =
+          `<p style='color: red;'>Failed to load configuration files. Make sure all JSON files are available.</p>`;
+        console.error(err);
+      }
+    }
+
+    function renderProductCards(productInfo) {
       const productListDiv = document.getElementById("product-list");
       productListDiv.innerHTML = "";
 
-      jsonStore.product_info.forEach(product => {
+      productInfo.forEach(product => {
         const card = document.createElement("div");
         card.className = "product-card";
         card.innerHTML = `
@@ -123,12 +100,11 @@
     function selectProduct(productCode, displayName) {
       localStorage.setItem("selectedProduct", productCode);
       localStorage.setItem("selectedProductName", displayName);
-      localStorage.setItem("parameterCategories", JSON.stringify(jsonStore.parameter_categories));
-      localStorage.setItem("optionDefinitions", JSON.stringify(jsonStore.option_definitions));
-      localStorage.setItem("validCombinations", JSON.stringify(jsonStore.valid_combinations));
-      localStorage.setItem("conflictRules", JSON.stringify(jsonStore.conflict_rules));
       window.location.href = "configurator.html";
     }
+
+    loadAllData();
   </script>
 </body>
 </html>
+
