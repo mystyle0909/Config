@@ -75,7 +75,8 @@
     "Product": "Transmitter1",
     "Parameter": "E",
     "Code": "2",
-    "Description": "4-20 mA"
+    "Description": "4-20 mA",
+    "Tips": "additional module"
   },
   {
     "Product": "Transmitter1",
@@ -99,7 +100,8 @@
     "Product": "2581",
     "Parameter": "A",
     "Code": "P",
-    "Description": "PVC"
+    "Description": "PVC",
+    "Tips": "PVC material to use"
   },
   {
     "Product": "2581",

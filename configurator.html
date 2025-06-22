@@ -72,7 +72,11 @@
           helpText: param.Description,
           options: filteredOptions
             .filter(o => o.Parameter === param.Parameter)
-            .map(o => ({ value: o.Code, label: o.Description, tooltip: o.Description }))
+            .map(o => ({
+              value: o.Code,
+              label: `${o.Description} (${o.Tips || ""})`.trim(),
+              tooltip: o.Tips || ""
+            }))
         })),
         conflicts: conflictRules.filter(rule => rule.Product === selectedProduct),
         prefix: productInfoMap[selectedProduct]?.Prefix || "",
