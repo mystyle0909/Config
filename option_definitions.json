@@ -96,13 +96,13 @@
     "Description": "Single Channel Data Logger"
   },
   {
-    "Product": 2581,
+    "Product": "2581",
     "Parameter": "A",
     "Code": "P",
     "Description": "PVC"
   },
   {
-    "Product": 2581,
+    "Product": "2581",
     "Parameter": "A",
     "Code": "C",
     "Description": "CPVC*"
