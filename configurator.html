@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Product Configurator</title>
+  <title id="page-title">Product Configurator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; }
     .card { border: 1px solid #ccc; padding: 16px; border-radius: 10px; margin-bottom: 20px; }
@@ -30,34 +30,55 @@
 
   let config = null;
   let answers = {};
-  let validCombinations = JSON.parse(localStorage.getItem("valid_combinations") || "[]");
-  let conflictRules = JSON.parse(localStorage.getItem("conflict_rules") || "[]");
+  let validCombinations = [];
+  let conflictRules = [];
+
+  function getOrFetch(key, url) {
+    const fromStorage = localStorage.getItem(key);
+    if (fromStorage) return Promise.resolve(JSON.parse(fromStorage));
+    return fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        localStorage.setItem(key, JSON.stringify(data));
+        return data;
+      });
+  }
 
   function loadData() {
-    if (!selectedProduct || !localStorage.getItem("parameter_categories")) {
-      document.getElementById("app").innerHTML = `<div class="card"><p>Missing configuration data. Please go back and upload JSON files on the product selection page.</p></div>`;
+    if (!selectedProduct) {
+      document.getElementById("app").innerHTML = `<div class="card"><p>Missing selected product. Please go back and choose a product first.</p></div>`;
       return;
     }
 
-    const paramCategories = JSON.parse(localStorage.getItem("parameter_categories"));
-    const optionDefs = JSON.parse(localStorage.getItem("option_definitions"));
+    Promise.all([
+      getOrFetch("parameter_categories", "parameter_categories.json"),
+      getOrFetch("option_definitions", "option_definitions.json"),
+      getOrFetch("valid_combinations", "valid_combinations.json"),
+      getOrFetch("conflict_rules", "conflict_rules.json")
+    ]).then(([paramCategories, optionDefs, combos, conflicts]) => {
+      validCombinations = combos;
+      conflictRules = conflicts;
 
-    const filteredParams = paramCategories.filter(p => p.Product === selectedProduct);
-    const filteredOptions = optionDefs.filter(o => o.Product === selectedProduct);
+      const filteredParams = paramCategories.filter(p => p.Product === selectedProduct);
+      const filteredOptions = optionDefs.filter(o => o.Product === selectedProduct);
 
-    config = {
-      parameters: filteredParams.map(param => ({
-        code: param.Parameter,
-        name: param.Name,
-        helpText: param.Description,
-        options: filteredOptions
-          .filter(o => o.Parameter === param.Parameter)
-          .map(o => ({ value: o.Code, label: o.Description, tooltip: o.Description }))
-      })),
-      conflicts: conflictRules.filter(rule => rule.Product === selectedProduct)
-    };
+      config = {
+        parameters: filteredParams.map(param => ({
+          code: param.Parameter,
+          name: param.Name,
+          helpText: param.Description,
+          options: filteredOptions
+            .filter(o => o.Parameter === param.Parameter)
+            .map(o => ({ value: o.Code, label: o.Description, tooltip: o.Description }))
+        })),
+        conflicts: conflictRules.filter(rule => rule.Product === selectedProduct)
+      };
 
-    renderConfigurator();
+      renderConfigurator();
+    }).catch(err => {
+      document.getElementById("app").innerHTML = `<div class="card"><p>Error loading configuration files.</p></div>`;
+      console.error(err);
+    });
   }
 
   function isDisabled(paramName, optVal) {
