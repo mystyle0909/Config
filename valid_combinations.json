@@ -1,0 +1,98 @@
+[
+  {
+    "Product":"Transmitter1",
+    "A":"E",
+    "B":1,
+    "C":0,
+    "D":0,
+    "E":0,
+    "F":0,
+    "Part Number Suffix":"E10000",
+    "Full Part Number":"3-9900-E10000",
+    "9-Digit Code":159079003
+  },
+  {
+    "Product":"Transmitter1",
+    "A":"E",
+    "B":1,
+    "C":1,
+    "D":0,
+    "E":0,
+    "F":0,
+    "Part Number Suffix":"E11000",
+    "Full Part Number":"3-9900-E11000",
+    "9-Digit Code":159079002
+  },
+  {
+    "Product":"Transmitter1",
+    "A":"E",
+    "B":1,
+    "C":1,
+    "D":1,
+    "E":0,
+    "F":0,
+    "Part Number Suffix":"E11100",
+    "Full Part Number":"3-9900-E11100",
+    "9-Digit Code":159079005
+  },
+  {
+    "Product":"Transmitter1",
+    "A":"E",
+    "B":1,
+    "C":0,
+    "D":1,
+    "E":0,
+    "F":0,
+    "Part Number Suffix":"E10100",
+    "Full Part Number":"3-9900-E10100",
+    "9-Digit Code":159079006
+  },
+  {
+    "Product":"Transmitter1",
+    "A":"E",
+    "B":1,
+    "C":0,
+    "D":0,
+    "E":2,
+    "F":0,
+    "Part Number Suffix":"E10020",
+    "Full Part Number":"3-9900-E10020",
+    "9-Digit Code":159079007
+  },
+  {
+    "Product":"Transmitter1",
+    "A":"E",
+    "B":1,
+    "C":1,
+    "D":0,
+    "E":2,
+    "F":0,
+    "Part Number Suffix":"E11020",
+    "Full Part Number":"3-9900-E11020",
+    "9-Digit Code":159079008
+  },
+  {
+    "Product":"Transmitter1",
+    "A":"E",
+    "B":1,
+    "C":1,
+    "D":0,
+    "E":0,
+    "F":1,
+    "Part Number Suffix":"E11001",
+    "Full Part Number":"3-9900-E11001",
+    "9-Digit Code":159079009
+  },
+  {
+    "Product":"Transmitter1",
+    "A":"E",
+    "B":1,
+    "C":0,
+    "D":2,
+    "E":0,
+    "F":0,
+    "Part Number Suffix":"E10200",
+    "Full Part Number":"3-9900-E10200",
+    "9-Digit Code":159079010
+  }
+]
