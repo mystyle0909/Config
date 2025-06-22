@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Configurator</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+    .card { border: 1px solid #ccc; padding: 16px; border-radius: 10px; margin-bottom: 20px; }
+    .option { margin: 5px 0; }
+    .option.disabled { color: #999; opacity: 0.5; pointer-events: none; }
+    button { margin-top: 10px; padding: 8px 16px; }
+  </style>
+</head>
+<body>
+
+<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; flex-wrap: wrap; gap: 10px;">
+  <h1 id="product-title">Configure Your Product</h1>
+  <a href="Product selection.html" style="font-size: 0.9rem; text-decoration: none; color: #007bff;">← Back to Product Selection</a>
+</div>
+
+<div id="app"></div>
+
+<script>
+  const selectedProduct = localStorage.getItem("selectedProduct");
+  const selectedProductName = localStorage.getItem("selectedProductName") || selectedProduct;
+
+  document.title = `Configure ${selectedProductName}`;
+  document.getElementById("product-title").textContent = `Configure ${selectedProductName}`;
+
+  let config = null;
+  let answers = {};
+  let validCombinations = JSON.parse(localStorage.getItem("valid_combinations") || "[]");
+  let conflictRules = JSON.parse(localStorage.getItem("conflict_rules") || "[]");
+
+  function loadData() {
+    if (!selectedProduct || !localStorage.getItem("parameter_categories")) {
+      document.getElementById("app").innerHTML = `<div class="card"><p>Missing configuration data. Please go back and upload JSON files on the product selection page.</p></div>`;
+      return;
+    }
+
+    const paramCategories = JSON.parse(localStorage.getItem("parameter_categories"));
+    const optionDefs = JSON.parse(localStorage.getItem("option_definitions"));
+
+    const filteredParams = paramCategories.filter(p => p.Product === selectedProduct);
+    const filteredOptions = optionDefs.filter(o => o.Product === selectedProduct);
+
+    config = {
+      parameters: filteredParams.map(param => ({
+        code: param.Parameter,
+        name: param.Name,
+        helpText: param.Description,
+        options: filteredOptions
+          .filter(o => o.Parameter === param.Parameter)
+          .map(o => ({ value: o.Code, label: o.Description, tooltip: o.Description }))
+      })),
+      conflicts: conflictRules.filter(rule => rule.Product === selectedProduct)
+    };
+
+    renderConfigurator();
+  }
+
+  function isDisabled(paramName, optVal) {
+    if (!config?.conflicts) return false;
+    return config.conflicts.some(rule =>
+      Object.entries(rule["If"]).every(([k, v]) => answers[k] === v) &&
+      rule["Not Allowed"]?.[paramName]?.includes(optVal)
+    );
+  }
+
+  function handleSelect(paramCode, value) {
+    answers[paramCode] = value;
+    renderConfigurator();
+  }
+
+  function renderConfigurator() {
+    const app = document.getElementById("app");
+    app.innerHTML = "";
+
+    config.parameters.forEach(param => {
+      const div = document.createElement("div");
+      div.className = "card";
+      div.innerHTML = `<h2>${param.name}</h2><p><em>${param.helpText || ""}</em></p>`;
+
+      param.options.forEach(opt => {
+        const disabled = isDisabled(param.code, opt.value);
+        const checked = answers[param.code] === opt.value;
+
+        div.innerHTML += `
+          <div class="option ${disabled ? 'disabled' : ''}" 
+               title="${disabled ? 'Disabled due to conflict' : ''}"
+               style="${disabled ? 'opacity: 0.5;' : ''}">
+            <label>
+              <input type="radio" name="${param.code}" value="${opt.value}"
+                ${checked ? "checked" : ""} ${disabled ? "disabled" : ""}
+                onchange="handleSelect('${param.code}', '${opt.value}')">
+              ${opt.label} <small>(${opt.tooltip})</small>
+            </label>
+          </div>`;
+      });
+
+      app.appendChild(div);
+    });
+
+    if (Object.keys(answers).length === config.parameters.length) {
+      showSummary(app);
+    }
+  }
+
+  function showSummary(container) {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.innerHTML = `<h2>Configuration Summary</h2>`;
+
+    const suffix = config.parameters.map(p => answers[p.code]).join("").padEnd(6, "0");
+    const fullPartNumber = `3-9900-${suffix}`;
+
+    let nineDigit = "Not found";
+    for (const combo of validCombinations) {
+      if (combo.Product === selectedProduct && config.parameters.every(p => String(combo[p.code]) === answers[p.code])) {
+        nineDigit = combo.NineDigitCode;
+        break;
+      }
+    }
+
+    div.innerHTML += `
+      <p><strong>Part Number:</strong> ${fullPartNumber}</p>
+      <p><strong>9-Digit Code:</strong> ${nineDigit}</p>
+      <ul>
+        ${config.parameters.map(p => {
+          const opt = p.options.find(o => o.value === answers[p.code]);
+          return `<li><strong>${p.name}:</strong> ${opt?.label || "N/A"}</li>`;
+        }).join("")}
+      </ul>
+      <button onclick="window.print()">🖨️ Print as PDF</button>
+    `;
+
+    container.appendChild(div);
+  }
+
+  loadData();
+</script>
+
+</body>
+</html>
