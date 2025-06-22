@@ -12,33 +12,36 @@
 
   <script>
     async function processExcel() {
-      const file = document.getElementById('input-excel').files[0];
+      const file = document.getElementById("input-excel").files[0];
       if (!file) return alert("Please upload an Excel file.");
 
       const reader = new FileReader();
       reader.onload = function (e) {
         const data = new Uint8Array(e.target.result);
-        const workbook = XLSX.read(data, { type: 'array' });
+        const workbook = XLSX.read(data, { type: "array" });
 
         // Extract tabs from workbook
-        const productInfo = XLSX.utils.sheet_to_json(workbook.Sheets['Product Info']);
-        const paramCategories = XLSX.utils.sheet_to_json(workbook.Sheets['Parameter Categories']);
-        const optionDefs = XLSX.utils.sheet_to_json(workbook.Sheets['Option Definitions']);
-        const validComb = XLSX.utils.sheet_to_json(workbook.Sheets['Valid Combinations']);
-        const conflicts = XLSX.utils.sheet_to_json(workbook.Sheets['Conflict Rules']);
+        const productInfo = XLSX.utils.sheet_to_json(workbook.Sheets["Product Info"], { raw: false });
+        const paramCategories = XLSX.utils.sheet_to_json(workbook.Sheets["Parameter Categories"], { raw: false });
+        const optionDefs = XLSX.utils.sheet_to_json(workbook.Sheets["Option Definitions"], { raw: false });
+        const validComb = XLSX.utils.sheet_to_json(workbook.Sheets["Valid Combinations"], { raw: false });
+        const conflicts = XLSX.utils.sheet_to_json(workbook.Sheets["Conflict Rules"], { raw: false });
 
-        downloadJSON(productInfo, 'product_info.json');
-        downloadJSON(paramCategories, 'parameter_categories.json');
-        downloadJSON(optionDefs, 'option_definitions.json');
-        downloadJSON(validComb, 'valid_combinations.json');
-        downloadJSON(conflicts, 'conflict_rules.json');
+        downloadJSON(productInfo, "product_info.json");
+        downloadJSON(paramCategories, "parameter_categories.json");
+        downloadJSON(optionDefs, "option_definitions.json");
+        downloadJSON(validComb, "valid_combinations.json");
+        downloadJSON(conflicts, "conflict_rules.json");
       };
       reader.readAsArrayBuffer(file);
     }
 
     function downloadJSON(obj, filename) {
-      const blob = new Blob([JSON.stringify(obj, null, 2)], { type: 'application/json' });
-      const link = document.createElement('a');
+      const jsonText = JSON.stringify(obj, (key, value) => {
+        return typeof value === "string" ? value : value;
+      }, 2);
+      const blob = new Blob([jsonText], { type: "application/json" });
+      const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
       link.download = filename;
       link.click();
