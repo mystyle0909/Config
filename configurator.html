@@ -32,6 +32,7 @@
   let answers = {};
   let validCombinations = [];
   let conflictRules = [];
+  let productInfoMap = {};
 
   function getOrFetch(key, url) {
     const fromStorage = localStorage.getItem(key);
@@ -51,13 +52,15 @@
     }
 
     Promise.all([
+      getOrFetch("product_info", "product_info.json"),
       getOrFetch("parameter_categories", "parameter_categories.json"),
       getOrFetch("option_definitions", "option_definitions.json"),
       getOrFetch("valid_combinations", "valid_combinations.json"),
       getOrFetch("conflict_rules", "conflict_rules.json")
-    ]).then(([paramCategories, optionDefs, combos, conflicts]) => {
+    ]).then(([productInfo, paramCategories, optionDefs, combos, conflicts]) => {
       validCombinations = combos;
       conflictRules = conflicts;
+      productInfoMap = Object.fromEntries(productInfo.map(p => [p.Product, p]));
 
       const filteredParams = paramCategories.filter(p => p.Product === selectedProduct);
       const filteredOptions = optionDefs.filter(o => o.Product === selectedProduct);
@@ -71,7 +74,9 @@
             .filter(o => o.Parameter === param.Parameter)
             .map(o => ({ value: o.Code, label: o.Description, tooltip: o.Description }))
         })),
-        conflicts: conflictRules.filter(rule => rule.Product === selectedProduct)
+        conflicts: conflictRules.filter(rule => rule.Product === selectedProduct),
+        prefix: productInfoMap[selectedProduct]?.Prefix || "",
+        format: productInfoMap[selectedProduct]?.["Part Number Format"] || ""
       };
 
       renderConfigurator();
@@ -133,13 +138,14 @@
     div.className = "card";
     div.innerHTML = `<h2>Configuration Summary</h2>`;
 
-    const suffix = config.parameters.map(p => answers[p.code]).join("").padEnd(6, "0");
-    const fullPartNumber = `3-9900-${suffix}`;
+    const values = Object.fromEntries(config.parameters.map(p => [p.code, answers[p.code]]));
+    const suffix = config.format.split("").map(char => /[A-Z]/.test(char) ? values[char] || "" : char).join("");
+    const fullPartNumber = `${config.prefix}${suffix}`;
 
     let nineDigit = "Not found";
     for (const combo of validCombinations) {
       if (combo.Product === selectedProduct && config.parameters.every(p => String(combo[p.code]) === answers[p.code])) {
-        nineDigit = combo.NineDigitCode;
+        nineDigit = combo["9-Digit Code"];
         break;
       }
     }

@@ -3,12 +3,16 @@
     "Product":"Transmitter1",
     "Display Name":"SmartPro Transmitter",
     "Description":"A configurable multi-parameter transmitter for industrial sensors.",
-    "Image URL":"https:\/\/example.com\/images\/smartpro_transmitter.png"
+    "Image URL":"https:\/\/example.com\/images\/smartpro_transmitter.png",
+    "Prefix":"3-9900-",
+    "Part Number Format":"ABCDEF"
   },
   {
-    "Product":"2750",
-    "Display Name":"pH",
-    "Description":"A pH sensor",
-    "Image URL":null
+    "Product":"2851",
+    "Display Name":"pH Transmitter",
+    "Description":"A pH transmitter with multi-option configuration.",
+    "Image URL":"https:\/\/example.com\/images\/ph_transmitter.png",
+    "Prefix":"3-2851-",
+    "Part Number Format":"ABC-D"
   }
 ]
