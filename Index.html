@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select a Product</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 30px auto;
+      max-width: 1000px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .product-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 12px;
+    }
+    .product-card h3 {
+      margin: 0 0 8px 0;
+    }
+    .product-card button {
+      margin-top: 12px;
+      padding: 8px 16px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .upload-section {
+      margin-bottom: 24px;
+    }
+    .upload-section p {
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select a Product to Configure</h1>
+
+  <div class="upload-section">
+    <p>Upload <code>product_info.json</code>:</p>
+    <input type="file" accept=".json" onchange="loadJSON(event, 'product_info')" />
+
+    <p>Upload <code>parameter_categories.json</code>:</p>
+    <input type="file" accept=".json" onchange="loadJSON(event, 'parameter_categories')" />
+
+    <p>Upload <code>option_definitions.json</code>:</p>
+    <input type="file" accept=".json" onchange="loadJSON(event, 'option_definitions')" />
+
+    <p>Upload <code>valid_combinations.json</code>:</p>
+    <input type="file" accept=".json" onchange="loadJSON(event, 'valid_combinations')" />
+
+    <p>Upload <code>conflict_rules.json</code>:</p>
+    <input type="file" accept=".json" onchange="loadJSON(event, 'conflict_rules')" />
+  </div>
+
+  <div class="product-grid" id="product-list"></div>
+
+  <script>
+    const jsonStore = {
+      product_info: [],
+      parameter_categories: [],
+      option_definitions: [],
+      valid_combinations: [],
+      conflict_rules: []
+    };
+
+    function loadJSON(event, type) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          jsonStore[type] = JSON.parse(e.target.result);
+          if (type === 'product_info') renderProductCards();
+        } catch (err) {
+          alert(`Failed to parse ${type} file.`);
+        }
+      };
+      reader.readAsText(event.target.files[0]);
+    }
+
+    function renderProductCards() {
+      const productListDiv = document.getElementById("product-list");
+      productListDiv.innerHTML = "";
+
+      jsonStore.product_info.forEach(product => {
+        const card = document.createElement("div");
+        card.className = "product-card";
+        card.innerHTML = `
+          <img src="${product["Image URL"]}" alt="${product["Display Name"]}" />
+          <h3>${product["Display Name"]}</h3>
+          <p>${product["Description"]}</p>
+          <button onclick="selectProduct('${product.Product}', '${product["Display Name"]}')">Configure</button>
+        `;
+        productListDiv.appendChild(card);
+      });
+    }
+
+    function selectProduct(productCode, displayName) {
+      localStorage.setItem("selectedProduct", productCode);
+      localStorage.setItem("selectedProductName", displayName);
+      localStorage.setItem("parameterCategories", JSON.stringify(jsonStore.parameter_categories));
+      localStorage.setItem("optionDefinitions", JSON.stringify(jsonStore.option_definitions));
+      localStorage.setItem("validCombinations", JSON.stringify(jsonStore.valid_combinations));
+      localStorage.setItem("conflictRules", JSON.stringify(jsonStore.conflict_rules));
+      window.location.href = "configurator.html";
+    }
+  </script>
+</body>
+</html>
