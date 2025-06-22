@@ -74,7 +74,7 @@
             .filter(o => o.Parameter === param.Parameter)
             .map(o => ({
               value: o.Code,
-              label: `${o.Description} (${o.Tips || ""})`.trim(),
+              label: o.Tips ? `${o.Description} (${o.Tips})` : o.Description,
               tooltip: o.Tips || ""
             }))
         })),
@@ -118,13 +118,13 @@
 
         div.innerHTML += `
           <div class="option ${disabled ? 'disabled' : ''}" 
-               title="${disabled ? 'Disabled due to conflict' : ''}"
+               title="${opt.tooltip || ''}"
                style="${disabled ? 'opacity: 0.5;' : ''}">
             <label>
               <input type="radio" name="${param.code}" value="${opt.value}"
                 ${checked ? "checked" : ""} ${disabled ? "disabled" : ""}
                 onchange="handleSelect('${param.code}', '${opt.value}')">
-              ${opt.label} <small>(${opt.tooltip})</small>
+              ${opt.label}
             </label>
           </div>`;
       });
