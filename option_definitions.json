@@ -108,63 +108,63 @@
     "Description": "CPVC*"
   },
   {
-    "Product": 2581,
+    "Product": "2581",
     "Parameter": "B",
     "Code": "T",
     "Description": "Titanium"
   },
   {
-    "Product": 2581,
+    "Product": "2581",
     "Parameter": "B",
     "Code": "H",
     "Description": "Hastelloy C"
   },
   {
-    "Product": 2581,
+    "Product": "2581",
     "Parameter": "B",
     "Code": "N",
     "Description": "Tantalum*"
   },
   {
-    "Product": 2581,
+    "Product": "2581",
     "Parameter": "C",
-    "Code": 1,
+    "Code": "1",
     "Description": "DN25 (1 in.), Union"
   },
   {
-    "Product": 2581,
+    "Product": "2581",
     "Parameter": "C",
-    "Code": 15,
+    "Code": "15",
     "Description": "DN40 (1.5 in.), Union"
   },
   {
-    "Product": 2581,
+    "Product": "2581",
     "Parameter": "C",
-    "Code": 2,
+    "Code": "2",
     "Description": "DN50 (2 in.), Union"
   },
   {
-    "Product": 2581,
+    "Product": "2581",
     "Parameter": "C",
-    "Code": 3,
+    "Code": "3",
     "Description": "DN80 (3 in.), Flange"
   },
   {
-    "Product": 2581,
+    "Product": "2581",
     "Parameter": "C",
-    "Code": 4,
+    "Code": "4",
     "Description": "DN100 (4 in.), Flange"
   },
   {
-    "Product": 2581,
+    "Product": "2581",
     "Parameter": "D",
-    "Code": 101,
+    "Code": "101",
     "Description": "FKM"
   },
   {
-    "Product": 2581,
+    "Product": "2581",
     "Parameter": "D",
-    "Code": 102,
+    "Code": "102",
     "Description": "EPDM"
   }
 ]

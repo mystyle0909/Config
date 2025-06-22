@@ -36,7 +36,7 @@
     "Description": "Data Logger"
   },
   {
-    "Product": 2581,
+    "Product": "2581",
     "Parameter": "A",
     "Name": "Body Material"
   },
@@ -46,7 +46,7 @@
     "Name": "Electrode Material"
   },
   {
-    "Product": 2581,
+    "Product": "2581",
     "Parameter": "C",
     "Name": "DN Size"
   },
