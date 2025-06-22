@@ -1,170 +1,315 @@
 [
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "A",
     "Code": "E",
     "Description": "Enclosure with Clear Door Cover"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "A",
     "Code": "S",
     "Description": "Fiber Glass, 12 x 10 x 4.74 in"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "A",
     "Code": "C",
     "Description": "Customer Requested "
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "B",
     "Code": "1",
     "Description": "DC powered, 24 VDC"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "B",
     "Code": "2",
     "Description": "AC power, 110/240 VAC"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "C",
     "Code": "0",
     "Description": "No Module"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "C",
     "Code": "1",
     "Description": "Relay Module, 3-9900.393"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "D",
     "Code": "0",
     "Description": "No Module"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "D",
     "Code": "1",
     "Description": "Conductivity Module, 3-9900.394"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "D",
     "Code": "2",
     "Description": "i-Go Analog to S3L Module, 3-8058-3"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "E",
     "Code": "0",
     "Description": "No Module"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "E",
     "Code": "1",
     "Description": "Modbus"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "E",
     "Code": "2",
     "Description": "4-20 mA",
     "Tips": "additional module"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "E",
     "Code": "3",
     "Description": "HART"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "F",
     "Code": "0",
     "Description": "No Data Logger"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "F",
     "Code": "1",
     "Description": "Single Channel Data Logger"
   },
   {
-    "Product": "2581",
+    "Product": "Enclosure-9950A",
     "Parameter": "A",
-    "Code": "P",
-    "Description": "PVC",
-    "Tips": "PVC material to use"
+    "Code": "E",
+    "Description": "Enclosure with Clear Door Cover"
   },
   {
-    "Product": "2581",
+    "Product": "Enclosure-9950A",
+    "Parameter": "A",
+    "Code": "S",
+    "Description": "Fiber Glass, 12 x 10 x 4.74 in"
+  },
+  {
+    "Product": "Enclosure-9950A",
     "Parameter": "A",
     "Code": "C",
-    "Description": "CPVC*"
+    "Description": "Customer Requested "
   },
   {
-    "Product": "2581",
+    "Product": "Enclosure-9950A",
+    "Parameter": "B",
+    "Code": "1",
+    "Description": "DC powered, 24 VDC"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "B",
+    "Code": "2",
+    "Description": "AC power, 110/240 VAC"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "C",
+    "Code": "0",
+    "Description": "No Module"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "C",
+    "Code": "1",
+    "Description": "4 Mechanical Relays, 3-9950.393-1"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "C",
+    "Code": "2",
+    "Description": "2 Mechanical Relays and 2 Solid State Relays, 3-9950.393-2"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "C",
+    "Code": "3",
+    "Description": "2 Mechanical Relays and 4 Binary Inputs, 3-9950.393-3"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "D",
+    "Code": "0",
+    "Description": "No Module"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "D",
+    "Code": "1",
+    "Description": "Dual Channel 4-20 mA Output, 3-9950.398-2"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "D",
+    "Code": "2",
+    "Description": "Single Channel Conductivity Module, 3-9950.394-1"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "D",
+    "Code": "3",
+    "Description": "Two Channel Conductivity Module, 3-9950.394-2"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "D",
+    "Code": "4",
+    "Description": "Modbus Module, 3-9950.395"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "E",
+    "Code": "0",
+    "Description": "No Module"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "E",
+    "Code": "1",
+    "Description": "Dual Channel 4-20 mA Output, 3-9950.398-2"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "E",
+    "Code": "2",
+    "Description": "Single Channel Conductivity Module, 3-9950.394-1"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "E",
+    "Code": "3",
+    "Description": "Two Channel Conductivity Module, 3-9950.394-2"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "E",
+    "Code": "4",
+    "Description": "Modbus Module, 3-9950.395"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "F",
+    "Code": "0",
+    "Description": "No Module"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "F",
+    "Code": "1",
+    "Description": "1 i-Go Analog to S3L Module, Wire Mount, 3-8058-1"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "F",
+    "Code": "2",
+    "Description": "2 i-Go Analog to S3L Module, Wire Mount, 3-8058-1"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "G",
+    "Code": "0",
+    "Description": "No Data Logger"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "G",
+    "Code": "1",
+    "Description": "Single Channel Data Logger"
+  },
+  {
+    "Product": "FlowtraMag",
+    "Parameter": "A",
+    "Code": "P",
+    "Description": "PVC"
+  },
+  {
+    "Product": "FlowtraMag",
+    "Parameter": "A",
+    "Code": "C",
+    "Description": "CPVC",
+    "Tips": "special"
+  },
+  {
+    "Product": "FlowtraMag",
     "Parameter": "B",
     "Code": "T",
     "Description": "Titanium"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "Parameter": "B",
     "Code": "H",
     "Description": "Hastelloy C"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "Parameter": "B",
     "Code": "N",
-    "Description": "Tantalum*"
+    "Description": "Tantalum",
+    "Tips": "special"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "Parameter": "C",
     "Code": "1",
     "Description": "DN25 (1 in.), Union"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "Parameter": "C",
     "Code": "15",
     "Description": "DN40 (1.5 in.), Union"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "Parameter": "C",
     "Code": "2",
     "Description": "DN50 (2 in.), Union"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "Parameter": "C",
     "Code": "3",
     "Description": "DN80 (3 in.), Flange"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "Parameter": "C",
     "Code": "4",
     "Description": "DN100 (4 in.), Flange"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "Parameter": "D",
     "Code": "101",
     "Description": "FKM"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "Parameter": "D",
     "Code": "102",
     "Description": "EPDM"

@@ -147,9 +147,11 @@
     const fullPartNumber = `${config.prefix}${suffix}`;
 
     let nineDigit = "Not found";
+    let listPrice = "";
     for (const combo of validCombinations) {
       if (combo.Product === selectedProduct && config.parameters.every(p => String(combo[p.code]) === answers[p.code])) {
         nineDigit = combo["9-Digit Code"];
+        listPrice = combo["List Price"] || "";
         break;
       }
     }
@@ -157,6 +159,7 @@
     div.innerHTML += `
       <p><strong>Part Number:</strong> ${fullPartNumber}</p>
       <p><strong>9-Digit Code:</strong> ${nineDigit}</p>
+      ${listPrice ? `<p><strong>List Price:</strong> ${listPrice}</p>` : ""}
       <ul>
         ${config.parameters.map(p => {
           const opt = p.options.find(o => o.value === answers[p.code]);

@@ -1,16 +1,35 @@
 [
   {
-    "Product": "Transmitter1",
-    "Display Name": "SmartPro Transmitter",
-    "Description": "A configurable multi-parameter transmitter for industrial sensors.",
-    "Image URL": "https://example.com/images/smartpro_transmitter.png",
+    "Product": "Enclosure-9900",
+    "Display Name": "Enclosure-9900",
+    "Description": "Pre-wired NEMA enclosure for 9900 single channel transmitter",
+    "Image URL": "pics/Enclosure.png",
     "Prefix": "3-9900-",
     "Part Number Format": "ABCDEF"
   },
   {
-    "Product": "2581",
-    "Display Name": "pH",
-    "Description": "A pH sensor",
+    "Product": "Enclosure-9900BC",
+    "Display Name": "Enclosure-9900BC",
+    "Image URL": "pics/Enclosure.png",
+    "Prefix": "3-9900BC-"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Display Name": "Enclosure-9950A",
+    "Image URL": "pics/Enclosure.png",
+    "Prefix": "3-9950A-"
+  },
+  {
+    "Product": "Enclosure-9950D",
+    "Display Name": "Enclosure-9950D",
+    "Image URL": "pics/Enclosure.png",
+    "Prefix": "3-9950D-"
+  },
+  {
+    "Product": "FlowtraMag",
+    "Display Name": "FlowtraMag",
+    "Description": "Electromagnetic flow meter",
+    "Image URL": "pics/FlowtraMag.png",
     "Prefix": "3-2581-",
     "Part Number Format": "ABC-D"
   }

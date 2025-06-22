@@ -1,57 +1,92 @@
 [
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "A",
     "Name": "Box Type",
     "Description": "Box type, such as size and materials"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "B",
     "Name": "Input Power",
     "Description": "Select input power, like AC, DC"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "C",
     "Name": "Relay Module",
     "Description": "Relay Module"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "D",
     "Name": "Conductivity Module",
     "Description": "Conductivity Module"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "E",
     "Name": "Output Module",
     "Description": "Output Module"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "Parameter": "F",
     "Name": "Data Logger",
     "Description": "Data Logger"
   },
   {
-    "Product": "2581",
+    "Product": "Enclosure-9950A",
+    "Parameter": "A",
+    "Name": "Box Type"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "B",
+    "Name": "Input Power"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "C",
+    "Name": "Relay Module"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "D",
+    "Name": "Module Slot 1"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "E",
+    "Name": "Module Slot 2"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "F",
+    "Name": "4-20 mA to S3L Converter"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "G",
+    "Name": "Data Logger"
+  },
+  {
+    "Product": "FlowtraMag",
     "Parameter": "A",
     "Name": "Body Material"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "Parameter": "B",
     "Name": "Electrode Material"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "Parameter": "C",
     "Name": "DN Size"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "Parameter": "D",
     "Name": "O-Ring"
   }

@@ -1,26 +1,24 @@
 [
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "If": {
-      "A": "E"
+      "E": "2"
     },
     "Not Allowed": {
-      "B": [
-        "2"
-      ],
-      "F": [
+      "D": [
+        "1",
         "2"
       ]
     }
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9950A",
     "If": {
-      "C": "0"
+      "D": "3"
     },
     "Not Allowed": {
       "E": [
-        "1"
+        "3"
       ]
     }
   }

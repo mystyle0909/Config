@@ -1,94 +1,190 @@
 [
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "A": "E",
     "B": "1",
     "C": "0",
     "D": "0",
     "E": "0",
     "F": "0",
-    "9-Digit Code": "159079003"
+    "9-Digit Code": "159079003",
+    "List Price": "$1,369"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "A": "E",
     "B": "1",
     "C": "1",
     "D": "0",
     "E": "0",
     "F": "0",
-    "9-Digit Code": "159079002"
+    "9-Digit Code": "159079002",
+    "List Price": "$1,492"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "A": "E",
     "B": "1",
     "C": "1",
     "D": "1",
     "E": "0",
     "F": "0",
-    "9-Digit Code": "159079005"
+    "9-Digit Code": "159079005",
+    "List Price": "$1,678"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "A": "E",
     "B": "1",
     "C": "0",
     "D": "1",
     "E": "0",
     "F": "0",
-    "9-Digit Code": "159079006"
+    "9-Digit Code": "159079006",
+    "List Price": "$1,556"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "A": "E",
     "B": "1",
     "C": "0",
     "D": "0",
     "E": "2",
     "F": "0",
-    "9-Digit Code": "159079007"
+    "9-Digit Code": "159079007",
+    "List Price": "$1,556"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "A": "E",
     "B": "1",
     "C": "1",
     "D": "0",
     "E": "2",
     "F": "0",
-    "9-Digit Code": "159079008"
+    "9-Digit Code": "159079008",
+    "List Price": "$1,678"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "A": "E",
     "B": "1",
     "C": "1",
     "D": "0",
     "E": "0",
     "F": "1",
-    "9-Digit Code": "159079009"
+    "9-Digit Code": "159079009",
+    "List Price": "$1,973"
   },
   {
-    "Product": "Transmitter1",
+    "Product": "Enclosure-9900",
     "A": "E",
     "B": "1",
     "C": "0",
     "D": "2",
     "E": "0",
     "F": "0",
-    "9-Digit Code": "159079010"
+    "9-Digit Code": "159079010",
+    "List Price": "$1,700"
   },
   {
-    "Product": "2581",
+    "Product": "Enclosure-9900",
+    "A": "E",
+    "B": "2",
+    "C": "0",
+    "D": "0",
+    "E": "0",
+    "F": "0",
+    "9-Digit Code": "159079004",
+    "List Price": "$1,502"
+  },
+  {
+    "Product": "Enclosure-9900",
+    "A": "E",
+    "B": "2",
+    "C": "1",
+    "D": "0",
+    "E": "0",
+    "F": "0",
+    "9-Digit Code": "159079011",
+    "List Price": "$1,625"
+  },
+  {
+    "Product": "Enclosure-9900",
+    "A": "E",
+    "B": "2",
+    "C": "1",
+    "D": "1",
+    "E": "0",
+    "F": "0",
+    "9-Digit Code": "159079012",
+    "List Price": "$1,812"
+  },
+  {
+    "Product": "Enclosure-9900",
+    "A": "E",
+    "B": "2",
+    "C": "0",
+    "D": "1",
+    "E": "0",
+    "F": "0",
+    "9-Digit Code": "159079013",
+    "List Price": "$1,689"
+  },
+  {
+    "Product": "Enclosure-9900",
+    "A": "E",
+    "B": "2",
+    "C": "0",
+    "D": "0",
+    "E": "2",
+    "F": "0",
+    "9-Digit Code": "159079014",
+    "List Price": "$1,689"
+  },
+  {
+    "Product": "Enclosure-9900",
+    "A": "E",
+    "B": "2",
+    "C": "1",
+    "D": "0",
+    "E": "2",
+    "F": "0",
+    "9-Digit Code": "159079015",
+    "List Price": "$1,812"
+  },
+  {
+    "Product": "Enclosure-9900",
+    "A": "E",
+    "B": "2",
+    "C": "1",
+    "D": "0",
+    "E": "0",
+    "F": "1",
+    "9-Digit Code": "159079016",
+    "List Price": "$2,110"
+  },
+  {
+    "Product": "Enclosure-9900",
+    "A": "E",
+    "B": "2",
+    "C": "0",
+    "D": "2",
+    "E": "0",
+    "F": "0",
+    "9-Digit Code": "159079017",
+    "List Price": "$1,840"
+  },
+  {
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "T",
-    "C": "1",
+    "C": "01",
     "D": "101",
     "9-Digit Code": "159001970"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "T",
     "C": "15",
@@ -96,39 +192,39 @@
     "9-Digit Code": "159001971"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "T",
-    "C": "2",
+    "C": "02",
     "D": "101",
     "9-Digit Code": "159001972"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "T",
-    "C": "3",
+    "C": "03",
     "D": "101",
     "9-Digit Code": "159001973"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "T",
-    "C": "4",
+    "C": "04",
     "D": "101",
     "9-Digit Code": "159001974"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "H",
-    "C": "1",
+    "C": "01",
     "D": "101",
     "9-Digit Code": "159001975"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "H",
     "C": "15",
@@ -136,39 +232,39 @@
     "9-Digit Code": "159001976"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "H",
-    "C": "2",
+    "C": "02",
     "D": "101",
     "9-Digit Code": "159001977"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "H",
-    "C": "3",
+    "C": "03",
     "D": "101",
     "9-Digit Code": "159001978"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "H",
-    "C": "4",
+    "C": "04",
     "D": "101",
     "9-Digit Code": "159001979"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "T",
-    "C": "1",
+    "C": "01",
     "D": "102",
     "9-Digit Code": "159001980"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "T",
     "C": "15",
@@ -176,39 +272,39 @@
     "9-Digit Code": "159001981"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "T",
-    "C": "2",
+    "C": "02",
     "D": "102",
     "9-Digit Code": "159001982"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "T",
-    "C": "3",
+    "C": "03",
     "D": "102",
     "9-Digit Code": "159001983"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "T",
-    "C": "4",
+    "C": "04",
     "D": "102",
     "9-Digit Code": "159001984"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "H",
-    "C": "1",
+    "C": "01",
     "D": "102",
     "9-Digit Code": "159001985"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "H",
     "C": "15",
@@ -216,27 +312,135 @@
     "9-Digit Code": "159001986"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "H",
-    "C": "2",
+    "C": "02",
     "D": "102",
     "9-Digit Code": "159001987"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "H",
-    "C": "3",
+    "C": "03",
     "D": "102",
     "9-Digit Code": "159001988"
   },
   {
-    "Product": "2581",
+    "Product": "FlowtraMag",
     "A": "P",
     "B": "H",
-    "C": "4",
+    "C": "04",
     "D": "102",
     "9-Digit Code": "159001989"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "A": "E",
+    "B": "2",
+    "C": "0",
+    "D": "0",
+    "E": "0",
+    "F": "0",
+    "G": "0",
+    "9-Digit Code": "159079018",
+    "List Price": "$2,792"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "A": "E",
+    "B": "2",
+    "C": "1",
+    "D": "0",
+    "E": "0",
+    "F": "0",
+    "G": "0",
+    "9-Digit Code": "159079019",
+    "List Price": "$3,030"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "A": "E",
+    "B": "2",
+    "C": "2",
+    "D": "0",
+    "E": "0",
+    "F": "0",
+    "G": "0",
+    "9-Digit Code": "159079020",
+    "List Price": "$3,042"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "A": "E",
+    "B": "2",
+    "C": "3",
+    "D": "0",
+    "E": "0",
+    "F": "0",
+    "G": "0",
+    "9-Digit Code": "159079021",
+    "List Price": "$3,085"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "A": "E",
+    "B": "2",
+    "C": "0",
+    "D": "2",
+    "E": "0",
+    "F": "0",
+    "G": "0",
+    "9-Digit Code": "159079022",
+    "List Price": "$3,162"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "A": "E",
+    "B": "2",
+    "C": "0",
+    "D": "3",
+    "E": "0",
+    "F": "0",
+    "G": "0",
+    "9-Digit Code": "159079023",
+    "List Price": "$3,344"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "A": "E",
+    "B": "2",
+    "C": "0",
+    "D": "4",
+    "E": "0",
+    "F": "0",
+    "G": "0",
+    "9-Digit Code": "159079024",
+    "List Price": "$3,157"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "A": "E",
+    "B": "2",
+    "C": "0",
+    "D": "0",
+    "E": "0",
+    "F": "0",
+    "G": "2",
+    "9-Digit Code": "159079025",
+    "List Price": "$3,721"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "A": "E",
+    "B": "2",
+    "C": "0",
+    "D": "1",
+    "E": "0",
+    "F": "2",
+    "G": "0",
+    "9-Digit Code": "159079026",
+    "List Price": "$4,103"
   }
 ]
