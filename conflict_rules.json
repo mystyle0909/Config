@@ -1,14 +1,27 @@
 [
   {
-    "Product":"Transmitter1",
-    "Parameter":"A",
-    "Value":1,
-    "Conflicts With":"B=2; F=2"
+    "Product": "Transmitter1",
+    "If": {
+      "A": "1"
+    },
+    "Not Allowed": {
+      "B": [
+        "2"
+      ],
+      "F": [
+        "2"
+      ]
+    }
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"C",
-    "Value":2,
-    "Conflicts With":"E=1"
+    "Product": "Transmitter1",
+    "If": {
+      "C": "2"
+    },
+    "Not Allowed": {
+      "E": [
+        "1"
+      ]
+    }
   }
 ]
