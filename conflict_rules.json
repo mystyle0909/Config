@@ -1,14 +1,12 @@
 [
   {
     "Product": "Transmitter1",
-    "Parameter": "A",
-    "Value": "1",
-    "Conflicts With": "B=2; F=2"
-  },
-  {
-    "Product": "Transmitter1",
-    "Parameter": "C",
-    "Value": "2",
-    "Conflicts With": "E=1"
+    "If": {},
+    "Not Allowed": {
+      "undefined": [
+        null,
+        null
+      ]
+    }
   }
 ]

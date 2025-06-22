@@ -20,12 +20,13 @@
         const data = new Uint8Array(e.target.result);
         const workbook = XLSX.read(data, { type: "array" });
 
-        // Extract tabs from workbook
         const productInfo = XLSX.utils.sheet_to_json(workbook.Sheets["Product Info"], { raw: false });
         const paramCategories = XLSX.utils.sheet_to_json(workbook.Sheets["Parameter Categories"], { raw: false });
         const optionDefs = XLSX.utils.sheet_to_json(workbook.Sheets["Option Definitions"], { raw: false });
         const validComb = XLSX.utils.sheet_to_json(workbook.Sheets["Valid Combinations"], { raw: false });
-        const conflicts = XLSX.utils.sheet_to_json(workbook.Sheets["Conflict Rules"], { raw: false });
+        const conflictRaw = XLSX.utils.sheet_to_json(workbook.Sheets["Conflict Rules"], { raw: false });
+
+        const conflicts = formatConflictRules(conflictRaw);
 
         downloadJSON(productInfo, "product_info.json");
         downloadJSON(paramCategories, "parameter_categories.json");
@@ -36,10 +37,38 @@
       reader.readAsArrayBuffer(file);
     }
 
+    function formatConflictRules(rows) {
+      const grouped = {};
+
+      for (const row of rows) {
+        const product = row["Product"];
+        const ifParam = row["If Param"];
+        const ifValue = row["If Value"];
+        const notAllowedParam = row["Not Allowed Param"];
+        const notAllowedValue = row["Not Allowed Value"];
+
+        const key = `${product}|${ifParam}|${ifValue}`;
+
+        if (!grouped[key]) {
+          grouped[key] = {
+            Product: product,
+            If: { [ifParam]: ifValue },
+            "Not Allowed": {}
+          };
+        }
+
+        if (!grouped[key]["Not Allowed"][notAllowedParam]) {
+          grouped[key]["Not Allowed"][notAllowedParam] = [];
+        }
+
+        grouped[key]["Not Allowed"][notAllowedParam].push(notAllowedValue);
+      }
+
+      return Object.values(grouped);
+    }
+
     function downloadJSON(obj, filename) {
-      const jsonText = JSON.stringify(obj, (key, value) => {
-        return typeof value === "string" ? value : value;
-      }, 2);
+      const jsonText = JSON.stringify(obj, null, 2);
       const blob = new Blob([jsonText], { type: "application/json" });
       const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
