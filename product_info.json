@@ -6,7 +6,7 @@
     "Image URL":"https:\/\/example.com\/images\/smartpro_transmitter.png"
   },
   {
-    "Product":2750,
+    "Product":"2750",
     "Display Name":"pH",
     "Description":"A pH sensor",
     "Image URL":null
