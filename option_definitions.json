@@ -1,98 +1,170 @@
 [
   {
-    "Product":"Transmitter1",
-    "Parameter":"A",
-    "Code":"E",
-    "Description":"Enclosure with Clear Door Cover"
+    "Product": "Transmitter1",
+    "Parameter": "A",
+    "Code": "E",
+    "Description": "Enclosure with Clear Door Cover"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"A",
-    "Code":"S",
-    "Description":"Fiber Glass, 12 x 10 x 4.74 in"
+    "Product": "Transmitter1",
+    "Parameter": "A",
+    "Code": "S",
+    "Description": "Fiber Glass, 12 x 10 x 4.74 in"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"A",
-    "Code":"C",
-    "Description":"Customer Requested "
+    "Product": "Transmitter1",
+    "Parameter": "A",
+    "Code": "C",
+    "Description": "Customer Requested "
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"B",
-    "Code":"1",
-    "Description":"DC powered, 24 VDC"
+    "Product": "Transmitter1",
+    "Parameter": "B",
+    "Code": "1",
+    "Description": "DC powered, 24 VDC"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"B",
-    "Code":"2",
-    "Description":"AC power, 110\/240 VAC"
+    "Product": "Transmitter1",
+    "Parameter": "B",
+    "Code": "2",
+    "Description": "AC power, 110/240 VAC"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"C",
-    "Code":"0",
-    "Description":"No Module"
+    "Product": "Transmitter1",
+    "Parameter": "C",
+    "Code": "0",
+    "Description": "No Module"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"C",
-    "Code":"1",
-    "Description":"Relay Module, 3-9900.393"
+    "Product": "Transmitter1",
+    "Parameter": "C",
+    "Code": "1",
+    "Description": "Relay Module, 3-9900.393"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"D",
-    "Code":"0",
-    "Description":"No Module"
+    "Product": "Transmitter1",
+    "Parameter": "D",
+    "Code": "0",
+    "Description": "No Module"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"D",
-    "Code":"1",
-    "Description":"Conductivity Module, 3-9900.394"
+    "Product": "Transmitter1",
+    "Parameter": "D",
+    "Code": "1",
+    "Description": "Conductivity Module, 3-9900.394"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"D",
-    "Code":"2",
-    "Description":"i-Go Analog to S3L Module, 3-8058-3"
+    "Product": "Transmitter1",
+    "Parameter": "D",
+    "Code": "2",
+    "Description": "i-Go Analog to S3L Module, 3-8058-3"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"E",
-    "Code":"0",
-    "Description":"No Module"
+    "Product": "Transmitter1",
+    "Parameter": "E",
+    "Code": "0",
+    "Description": "No Module"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"E",
-    "Code":"1",
-    "Description":"Modbus"
+    "Product": "Transmitter1",
+    "Parameter": "E",
+    "Code": "1",
+    "Description": "Modbus"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"E",
-    "Code":"2",
-    "Description":"4-20 mA"
+    "Product": "Transmitter1",
+    "Parameter": "E",
+    "Code": "2",
+    "Description": "4-20 mA"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"E",
-    "Code":"3",
-    "Description":"HART"
+    "Product": "Transmitter1",
+    "Parameter": "E",
+    "Code": "3",
+    "Description": "HART"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"F",
-    "Code":"0",
-    "Description":"No Data Logger"
+    "Product": "Transmitter1",
+    "Parameter": "F",
+    "Code": "0",
+    "Description": "No Data Logger"
   },
   {
-    "Product":"Transmitter1",
-    "Parameter":"F",
-    "Code":"1",
-    "Description":"Single Channel Data Logger"
+    "Product": "Transmitter1",
+    "Parameter": "F",
+    "Code": "1",
+    "Description": "Single Channel Data Logger"
+  },
+  {
+    "Product": "2581",
+    "Parameter": "A",
+    "Code": "P",
+    "Description": "PVC"
+  },
+  {
+    "Product": "2581",
+    "Parameter": "A",
+    "Code": "C",
+    "Description": "CPVC*"
+  },
+  {
+    "Product": "2581",
+    "Parameter": "B",
+    "Code": "T",
+    "Description": "Titanium"
+  },
+  {
+    "Product": "2581",
+    "Parameter": "B",
+    "Code": "H",
+    "Description": "Hastelloy C"
+  },
+  {
+    "Product": "2581",
+    "Parameter": "B",
+    "Code": "N",
+    "Description": "Tantalum*"
+  },
+  {
+    "Product": "2581",
+    "Parameter": "C",
+    "Code": "1",
+    "Description": "DN25 (1 in.), Union"
+  },
+  {
+    "Product": "2581",
+    "Parameter": "C",
+    "Code": "15",
+    "Description": "DN40 (1.5 in.), Union"
+  },
+  {
+    "Product": "2581",
+    "Parameter": "C",
+    "Code": "2",
+    "Description": "DN50 (2 in.), Union"
+  },
+  {
+    "Product": "2581",
+    "Parameter": "C",
+    "Code": "3",
+    "Description": "DN80 (3 in.), Flange"
+  },
+  {
+    "Product": "2581",
+    "Parameter": "C",
+    "Code": "4",
+    "Description": "DN100 (4 in.), Flange"
+  },
+  {
+    "Product": "2581",
+    "Parameter": "D",
+    "Code": "101",
+    "Description": "FKM"
+  },
+  {
+    "Product": "2581",
+    "Parameter": "D",
+    "Code": "102",
+    "Description": "EPDM"
   }
 ]
