@@ -23,8 +23,20 @@
         const productInfo = XLSX.utils.sheet_to_json(workbook.Sheets["Product Info"], { raw: false });
         const paramCategories = XLSX.utils.sheet_to_json(workbook.Sheets["Parameter Categories"], { raw: false });
         const optionDefs = XLSX.utils.sheet_to_json(workbook.Sheets["Option Definitions"], { raw: false });
-        const validComb = XLSX.utils.sheet_to_json(workbook.Sheets["Valid Combinations"], { raw: false });
+        const validCombRaw = XLSX.utils.sheet_to_json(workbook.Sheets["Valid Combinations"], { raw: false });
         const conflictRaw = XLSX.utils.sheet_to_json(workbook.Sheets["Conflict Rules"], { raw: false });
+
+        const validComb = validCombRaw.map(row => {
+          const obj = {};
+          for (const key in row) {
+            if (key === "List Price") {
+              obj[key] = parseFloat(row[key]);
+            } else {
+              obj[key] = row[key];
+            }
+          }
+          return obj;
+        });
 
         const conflicts = formatSimpleConflictRules(conflictRaw);
 

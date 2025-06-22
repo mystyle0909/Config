@@ -116,6 +116,29 @@
         const disabled = isDisabled(param.code, opt.value);
         const checked = answers[param.code] === opt.value;
 
+        // Calculate price difference
+        let priceDiffLabel = "";
+        if (Object.keys(answers).length === config.parameters.length) {
+          const baseCombo = validCombinations.find(combo =>
+            combo.Product === selectedProduct &&
+            config.parameters.every(p => combo[p.code] === answers[p.code])
+          );
+          if (baseCombo && "List Price" in baseCombo) {
+            const altAnswers = { ...answers, [param.code]: opt.value };
+            const altCombo = validCombinations.find(combo =>
+              combo.Product === selectedProduct &&
+              config.parameters.every(p => combo[p.code] === altAnswers[p.code])
+            );
+            if (altCombo && "List Price" in altCombo) {
+              const diff = altCombo["List Price"] - baseCombo["List Price"];
+              if (diff !== 0) {
+                const sign = diff > 0 ? "+" : "−";
+                priceDiffLabel = ` <span style="color:#888">(${sign}$${Math.abs(diff)})</span>`;
+              }
+            }
+          }
+        }
+
         div.innerHTML += `
           <div class="option ${disabled ? 'disabled' : ''}" 
                title="${opt.tooltip || ''}"
@@ -124,7 +147,7 @@
               <input type="radio" name="${param.code}" value="${opt.value}"
                 ${checked ? "checked" : ""} ${disabled ? "disabled" : ""}
                 onchange="handleSelect('${param.code}', '${opt.value}')">
-              ${opt.label}
+              ${opt.label}${priceDiffLabel}
             </label>
           </div>`;
       });
@@ -159,7 +182,7 @@
     div.innerHTML += `
       <p><strong>Part Number:</strong> ${fullPartNumber}</p>
       <p><strong>9-Digit Code:</strong> ${nineDigit}</p>
-      ${listPrice ? `<p><strong>List Price:</strong> ${listPrice}</p>` : ""}
+      ${listPrice ? `<p><strong>List Price:</strong> $${listPrice}</p>` : ""}
       <ul>
         ${config.parameters.map(p => {
           const opt = p.options.find(o => o.value === answers[p.code]);
