@@ -1,11 +1,26 @@
 [
   {
     "Product": "Transmitter1",
-    "If": {},
+    "If": {
+      "A": "E"
+    },
     "Not Allowed": {
-      "undefined": [
-        null,
-        null
+      "B": [
+        "2"
+      ],
+      "F": [
+        "2"
+      ]
+    }
+  },
+  {
+    "Product": "Transmitter1",
+    "If": {
+      "C": "0"
+    },
+    "Not Allowed": {
+      "E": [
+        "1"
       ]
     }
   }

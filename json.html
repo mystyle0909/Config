@@ -26,7 +26,7 @@
         const validComb = XLSX.utils.sheet_to_json(workbook.Sheets["Valid Combinations"], { raw: false });
         const conflictRaw = XLSX.utils.sheet_to_json(workbook.Sheets["Conflict Rules"], { raw: false });
 
-        const conflicts = formatConflictRules(conflictRaw);
+        const conflicts = formatSimpleConflictRules(conflictRaw);
 
         downloadJSON(productInfo, "product_info.json");
         downloadJSON(paramCategories, "parameter_categories.json");
@@ -37,34 +37,36 @@
       reader.readAsArrayBuffer(file);
     }
 
-    function formatConflictRules(rows) {
-      const grouped = {};
+    function formatSimpleConflictRules(rows) {
+      const result = [];
 
       for (const row of rows) {
-        const product = row["Product"];
-        const ifParam = row["If Param"];
-        const ifValue = row["If Value"];
-        const notAllowedParam = row["Not Allowed Param"];
-        const notAllowedValue = row["Not Allowed Value"];
+        const product = String(row["Product"] || "").trim();
+        const param = String(row["Parameter"] || "").trim();
+        const value = String(row["Value"] || "").trim();
+        const conflictsWith = String(row["Conflicts With"] || "").trim();
 
-        const key = `${product}|${ifParam}|${ifValue}`;
+        if (!product || !param || !value || !conflictsWith) continue;
 
-        if (!grouped[key]) {
-          grouped[key] = {
-            Product: product,
-            If: { [ifParam]: ifValue },
-            "Not Allowed": {}
-          };
+        const conflictEntries = conflictsWith.split(";").map(entry => entry.trim()).filter(Boolean);
+        const notAllowed = {};
+
+        for (const entry of conflictEntries) {
+          const [cParam, cValue] = entry.split("=").map(part => String(part || "").trim());
+          if (!cParam || !cValue) continue;
+
+          if (!notAllowed[cParam]) notAllowed[cParam] = [];
+          if (!notAllowed[cParam].includes(cValue)) notAllowed[cParam].push(cValue);
         }
 
-        if (!grouped[key]["Not Allowed"][notAllowedParam]) {
-          grouped[key]["Not Allowed"][notAllowedParam] = [];
-        }
-
-        grouped[key]["Not Allowed"][notAllowedParam].push(notAllowedValue);
+        result.push({
+          Product: product,
+          If: { [param]: value },
+          "Not Allowed": notAllowed
+        });
       }
 
-      return Object.values(grouped);
+      return result;
     }
 
     function downloadJSON(obj, filename) {
