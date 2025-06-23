@@ -1,7 +1,7 @@
 [
   {
     "Product": "Enclosure-9900",
-    "Display Name": "Enclosure-9900",
+    "Display Name": "Enclosure for 9900",
     "Description": "Pre-wired NEMA enclosure for 9900 single channel transmitter",
     "Image URL": "pics/Enclosure.png",
     "Prefix": "3-9900-",
@@ -9,19 +9,23 @@
   },
   {
     "Product": "Enclosure-9900BC",
-    "Display Name": "Enclosure-9900BC",
+    "Display Name": "Enclosure for 9900 Batch Controller",
+    "Description": "Pre-wired NEMA enclosure for 9900 batch controller",
     "Image URL": "pics/Enclosure.png",
     "Prefix": "3-9900BC-"
   },
   {
     "Product": "Enclosure-9950A",
-    "Display Name": "Enclosure-9950A",
+    "Display Name": "Enclosure for 9950 Two Channel Transmitter",
+    "Description": "Pre-wired NEMA enclosure for 9950 two channel transmitter",
     "Image URL": "pics/Enclosure.png",
-    "Prefix": "3-9950A-"
+    "Prefix": "3-9950A-",
+    "Part Number Format": "ABCDEFG"
   },
   {
     "Product": "Enclosure-9950D",
-    "Display Name": "Enclosure-9950D",
+    "Display Name": "Enclosure for 9950 Six Channel Transmitter",
+    "Description": "Pre-wired NEMA enclosure for 9950 six channel transmitter",
     "Image URL": "pics/Enclosure.png",
     "Prefix": "3-9950D-"
   },
