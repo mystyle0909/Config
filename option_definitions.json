@@ -275,7 +275,7 @@
   {
     "Product": "FlowtraMag",
     "Parameter": "C",
-    "Code": "1",
+    "Code": "01",
     "Description": "DN25 (1 in.), Union"
   },
   {
@@ -287,19 +287,19 @@
   {
     "Product": "FlowtraMag",
     "Parameter": "C",
-    "Code": "2",
+    "Code": "02",
     "Description": "DN50 (2 in.), Union"
   },
   {
     "Product": "FlowtraMag",
     "Parameter": "C",
-    "Code": "3",
+    "Code": "03",
     "Description": "DN80 (3 in.), Flange"
   },
   {
     "Product": "FlowtraMag",
     "Parameter": "C",
-    "Code": "4",
+    "Code": "04",
     "Description": "DN100 (4 in.), Flange"
   },
   {
