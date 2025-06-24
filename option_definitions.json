@@ -78,7 +78,7 @@
     "Parameter": "E",
     "Code": "2",
     "Description": "4-20 mA",
-    "Image URL": "Pics/3-9900.398-1_4-20Module.png",
+    "Image URL": "pics/3-9900.398-1_4-20Module.png",
     "Tips": "additional module"
   },
   {
@@ -235,7 +235,7 @@
     "Parameter": "F",
     "Code": "2",
     "Description": "2 i-Go Analog to S3L Module, Wire Mount, 3-8058-1",
-    "Image URL": "pics/3-8058-1_iGox2.png"
+    "Image URL": "pics/3-8058-1_iGo_x2.png"
   },
   {
     "Product": "Enclosure-9950A",

@@ -200,8 +200,8 @@
       <ul>
         ${config.parameters.map(p => {
           const opt = p.options.find(o => o.value === answers[p.code]) || {};
-          const imageHtml = opt?.image ? `<img src="${opt.image}" class="summary-img" alt="${opt.label}" />` : "";
-          return `<li><strong>${p.name}:</strong> ${opt?.label || "N/A"}${imageHtml}</li>`;
+          const imageHtml = "";
+          return `<li><strong>${p.name}:</strong> ${opt?.label || "N/A"}</li>`;
         }).join("")}
       </ul>
       <button onclick="window.print()">🖨️ Print as PDF</button>
