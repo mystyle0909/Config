@@ -7,10 +7,10 @@
   <style>
     body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; }
     .card { border: 1px solid #ccc; padding: 16px; border-radius: 10px; margin-bottom: 20px; }
-    .option { margin: 5px 0; }
+    .option { margin: 5px 0; display: flex; align-items: center; gap: 10px; }
     .option.disabled { color: #999; opacity: 0.5; pointer-events: none; }
+    .option img { max-width: 50px; max-height: 50px; }
     button { margin-top: 10px; padding: 8px 16px; }
-    .summary-img { max-width: 100px; max-height: 100px; display: block; margin-top: 5px; }
   </style>
 </head>
 <body>
@@ -150,6 +150,7 @@
                 onchange="handleSelect('${param.code}', '${opt.value}')">
               ${opt.label}${priceDiffLabel}
             </label>
+            ${opt.image ? `<img src="${opt.image}" alt="${opt.label}" />` : ""}
           </div>`;
       });
 
@@ -187,8 +188,7 @@
       <ul>
         ${config.parameters.map(p => {
           const opt = p.options.find(o => o.value === answers[p.code]);
-          const imageHtml = opt?.image ? `<img src="${opt.image}" class="summary-img" alt="${opt.label}" />` : "";
-          return `<li><strong>${p.name}:</strong> ${opt?.label || "N/A"}${imageHtml}</li>`;
+          return `<li><strong>${p.name}:</strong> ${opt?.label || "N/A"}</li>`;
         }).join("")}
       </ul>
       <button onclick="window.print()">🖨️ Print as PDF</button>
