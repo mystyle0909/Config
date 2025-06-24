@@ -38,7 +38,7 @@
           return obj;
         });
 
-        const conflicts = formatSimpleConflictRules(conflictRaw);
+        const conflicts = formatBidirectionalConflictRules(conflictRaw);
 
         downloadJSON(productInfo, "product_info.json");
         downloadJSON(paramCategories, "parameter_categories.json");
@@ -49,8 +49,9 @@
       reader.readAsArrayBuffer(file);
     }
 
-    function formatSimpleConflictRules(rows) {
+    function formatBidirectionalConflictRules(rows) {
       const result = [];
+      const added = new Set();
 
       for (const row of rows) {
         const product = String(row["Product"] || "").trim();
@@ -64,18 +65,32 @@
         const notAllowed = {};
 
         for (const entry of conflictEntries) {
-          const [cParam, cValue] = entry.split("=").map(part => String(part || "").trim());
+          const [cParam, cValue] = entry.split("=").map(x => String(x || "").trim());
           if (!cParam || !cValue) continue;
-
           if (!notAllowed[cParam]) notAllowed[cParam] = [];
-          if (!notAllowed[cParam].includes(cValue)) notAllowed[cParam].push(cValue);
+          notAllowed[cParam].push(cValue);
+
+          // Add reverse rule
+          const reverseKey = `${product}|${cParam}|${cValue}|${param}|${value}`;
+          if (!added.has(reverseKey)) {
+            result.push({
+              Product: product,
+              If: { [cParam]: cValue },
+              "Not Allowed": { [param]: [value] }
+            });
+            added.add(reverseKey);
+          }
         }
 
-        result.push({
-          Product: product,
-          If: { [param]: value },
-          "Not Allowed": notAllowed
-        });
+        const forwardKey = `${product}|${param}|${value}`;
+        if (!added.has(forwardKey)) {
+          result.push({
+            Product: product,
+            If: { [param]: value },
+            "Not Allowed": notAllowed
+          });
+          added.add(forwardKey);
+        }
       }
 
       return result;

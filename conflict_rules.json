@@ -2,12 +2,45 @@
   {
     "Product": "Enclosure-9900",
     "If": {
+      "D": "1"
+    },
+    "Not Allowed": {
+      "E": [
+        "2"
+      ]
+    }
+  },
+  {
+    "Product": "Enclosure-9900",
+    "If": {
+      "D": "2"
+    },
+    "Not Allowed": {
+      "E": [
+        "2"
+      ]
+    }
+  },
+  {
+    "Product": "Enclosure-9900",
+    "If": {
       "E": "2"
     },
     "Not Allowed": {
       "D": [
         "1",
         "2"
+      ]
+    }
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "If": {
+      "E": "3"
+    },
+    "Not Allowed": {
+      "D": [
+        "3"
       ]
     }
   },
