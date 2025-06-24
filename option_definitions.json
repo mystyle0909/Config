@@ -3,7 +3,8 @@
     "Product": "Enclosure-9900",
     "Parameter": "A",
     "Code": "E",
-    "Description": "Enclosure with Clear Door Cover"
+    "Description": "Enclosure with Clear Door Cover",
+    "Image URL": "pics/Enclosure_NBE.png"
   },
   {
     "Product": "Enclosure-9900",
@@ -103,7 +104,8 @@
     "Product": "Enclosure-9950A",
     "Parameter": "A",
     "Code": "E",
-    "Description": "Enclosure with Clear Door Cover"
+    "Description": "Enclosure with Clear Door Cover",
+    "Image URL": "pics/Enclosure_NBE.png"
   },
   {
     "Product": "Enclosure-9950A",
