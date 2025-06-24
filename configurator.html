@@ -10,6 +10,7 @@
     .option { margin: 5px 0; }
     .option.disabled { color: #999; opacity: 0.5; pointer-events: none; }
     button { margin-top: 10px; padding: 8px 16px; }
+    .summary-img { max-width: 100px; max-height: 100px; display: block; margin-top: 5px; }
   </style>
 </head>
 <body>
@@ -75,7 +76,8 @@
             .map(o => ({
               value: o.Code,
               label: o.Tips ? `${o.Description} (${o.Tips})` : o.Description,
-              tooltip: o.Tips || ""
+              tooltip: o.Tips || "",
+              image: o["Image URL"] || null
             }))
         })),
         conflicts: conflictRules.filter(rule => rule.Product === selectedProduct),
@@ -116,7 +118,6 @@
         const disabled = isDisabled(param.code, opt.value);
         const checked = answers[param.code] === opt.value;
 
-        // Calculate price difference
         let priceDiffLabel = "";
         if (Object.keys(answers).length === config.parameters.length) {
           const baseCombo = validCombinations.find(combo =>
@@ -186,7 +187,8 @@
       <ul>
         ${config.parameters.map(p => {
           const opt = p.options.find(o => o.value === answers[p.code]);
-          return `<li><strong>${p.name}:</strong> ${opt?.label || "N/A"}</li>`;
+          const imageHtml = opt?.image ? `<img src="${opt.image}" class="summary-img" alt="${opt.label}" />` : "";
+          return `<li><strong>${p.name}:</strong> ${opt?.label || "N/A"}${imageHtml}</li>`;
         }).join("")}
       </ul>
       <button onclick="window.print()">🖨️ Print as PDF</button>
