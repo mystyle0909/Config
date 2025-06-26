@@ -462,5 +462,545 @@
     "G": "0",
     "9-Digit Code": "159079026",
     "List Price": 4103
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "0",
+    "C": "1",
+    "D": "1",
+    "9-Digit Code": "159001105",
+    "List Price": 1170
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "0",
+    "C": "1",
+    "D": "1",
+    "9-Digit Code": "159001108",
+    "List Price": 1567
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "0",
+    "C": "1",
+    "D": "1",
+    "9-Digit Code": "159001257",
+    "List Price": 1622
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "0",
+    "C": "2",
+    "D": "1",
+    "9-Digit Code": "159001267",
+    "List Price": 2096
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "0",
+    "C": "2",
+    "D": "1",
+    "9-Digit Code": "159001436",
+    "List Price": 2555
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "0",
+    "C": "2",
+    "D": "1",
+    "9-Digit Code": "159001269",
+    "List Price": 2466
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "0",
+    "C": "4",
+    "D": "1",
+    "9-Digit Code": "159001261",
+    "List Price": 1718
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "0",
+    "C": "4",
+    "D": "1",
+    "9-Digit Code": "159001433",
+    "List Price": 2116
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "0",
+    "C": "4",
+    "D": "1",
+    "9-Digit Code": "159001263",
+    "List Price": 2137
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "1",
+    "C": "1",
+    "D": "1",
+    "9-Digit Code": "159001106",
+    "List Price": 1228
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "1",
+    "C": "1",
+    "D": "1",
+    "9-Digit Code": "159001109",
+    "List Price": 1629
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "1",
+    "C": "1",
+    "D": "1",
+    "9-Digit Code": "159001258",
+    "List Price": 1626
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "1",
+    "C": "2",
+    "D": "1",
+    "9-Digit Code": "159001268",
+    "List Price": 2130
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "1",
+    "C": "2",
+    "D": "1",
+    "9-Digit Code": "159001437",
+    "List Price": 2916
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "1",
+    "C": "2",
+    "D": "1",
+    "9-Digit Code": "159001270",
+    "List Price": 2877
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "1",
+    "C": "4",
+    "D": "1",
+    "9-Digit Code": "159001262",
+    "List Price": 1753
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "1",
+    "C": "4",
+    "D": "1",
+    "9-Digit Code": "159001434",
+    "List Price": 2108
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "1",
+    "C": "4",
+    "D": "1",
+    "9-Digit Code": "159001264",
+    "List Price": 2449
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "2",
+    "C": "1",
+    "D": "1",
+    "9-Digit Code": "159001107",
+    "List Price": 1595
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "2",
+    "C": "1",
+    "D": "1",
+    "9-Digit Code": "159001448",
+    "List Price": 2077
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "2",
+    "C": "1",
+    "D": "1",
+    "9-Digit Code": "159001450",
+    "List Price": 2077
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "2",
+    "C": "2",
+    "D": "1",
+    "9-Digit Code": "159001435",
+    "List Price": 2607
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "2",
+    "C": "2",
+    "D": "1",
+    "9-Digit Code": "159001454",
+    "List Price": 3414
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "2",
+    "C": "2",
+    "D": "1",
+    "9-Digit Code": "159001456",
+    "List Price": 2941
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "2",
+    "C": "4",
+    "D": "1",
+    "9-Digit Code": "159001432",
+    "List Price": 2116
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "2",
+    "C": "4",
+    "D": "1",
+    "9-Digit Code": "159001460",
+    "List Price": 2872
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "2",
+    "C": "4",
+    "D": "1",
+    "9-Digit Code": "159001462",
+    "List Price": 2475
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "0",
+    "C": "1",
+    "D": "2",
+    "9-Digit Code": "159001110",
+    "List Price": 1170
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "0",
+    "C": "1",
+    "D": "2",
+    "9-Digit Code": "159001113",
+    "List Price": 1595
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "0",
+    "C": "1",
+    "D": "2",
+    "9-Digit Code": "159001259",
+    "List Price": 1591
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "0",
+    "C": "2",
+    "D": "2",
+    "9-Digit Code": "159001273",
+    "List Price": 2223
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "0",
+    "C": "2",
+    "D": "2",
+    "9-Digit Code": "159001439",
+    "List Price": 2725
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "0",
+    "C": "2",
+    "D": "2",
+    "9-Digit Code": "159001275",
+    "List Price": 2644
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "0",
+    "C": "4",
+    "D": "2",
+    "9-Digit Code": "159001279",
+    "List Price": 1844
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "0",
+    "C": "4",
+    "D": "2",
+    "9-Digit Code": "159001442",
+    "List Price": 2237
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "0",
+    "C": "4",
+    "D": "2",
+    "9-Digit Code": "159001281",
+    "List Price": 2264
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "1",
+    "C": "1",
+    "D": "2",
+    "9-Digit Code": "159001111",
+    "List Price": 1228
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "1",
+    "C": "1",
+    "D": "2",
+    "9-Digit Code": "159001114",
+    "List Price": 1629
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "1",
+    "C": "1",
+    "D": "2",
+    "9-Digit Code": "159001260",
+    "List Price": 1626
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "1",
+    "C": "2",
+    "D": "2",
+    "9-Digit Code": "159001274",
+    "List Price": 2254
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "1",
+    "C": "2",
+    "D": "2",
+    "9-Digit Code": "159001440",
+    "List Price": 3047
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "1",
+    "C": "2",
+    "D": "2",
+    "9-Digit Code": "159001276",
+    "List Price": 2677
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "1",
+    "C": "4",
+    "D": "2",
+    "9-Digit Code": "159001280",
+    "List Price": 1876
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "1",
+    "C": "4",
+    "D": "2",
+    "9-Digit Code": "159001443",
+    "List Price": 2225
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "1",
+    "C": "4",
+    "D": "2",
+    "9-Digit Code": "159001282",
+    "List Price": 2298
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "2",
+    "C": "1",
+    "D": "2",
+    "9-Digit Code": "159001112",
+    "List Price": 1716
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "2",
+    "C": "1",
+    "D": "2",
+    "9-Digit Code": "159001449",
+    "List Price": 2156
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "2",
+    "C": "1",
+    "D": "2",
+    "9-Digit Code": "159001451",
+    "List Price": 2196
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "2",
+    "C": "2",
+    "D": "2",
+    "9-Digit Code": "159001438",
+    "List Price": 2725
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "2",
+    "C": "2",
+    "D": "2",
+    "9-Digit Code": "159001455",
+    "List Price": 3143
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "2",
+    "C": "2",
+    "D": "2",
+    "9-Digit Code": "159001457",
+    "List Price": 3051
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "P",
+    "B": "2",
+    "C": "4",
+    "D": "2",
+    "9-Digit Code": "159001441",
+    "List Price": 2237
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "T",
+    "B": "2",
+    "C": "4",
+    "D": "2",
+    "9-Digit Code": "159001461",
+    "List Price": 2665
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "2",
+    "C": "4",
+    "D": "2",
+    "9-Digit Code": "159001463",
+    "List Price": 2717
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "3",
+    "C": "1",
+    "D": "1",
+    "9-Digit Code": "159002208",
+    "List Price": 1997
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "4",
+    "C": "1",
+    "D": "1",
+    "9-Digit Code": "159002214",
+    "List Price": 2021
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "5",
+    "C": "1",
+    "D": "1",
+    "9-Digit Code": "159002220",
+    "List Price": 2437
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "3",
+    "C": "1",
+    "D": "2",
+    "9-Digit Code": "159002209",
+    "List Price": 1997
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "4",
+    "C": "1",
+    "D": "2",
+    "9-Digit Code": "159002215",
+    "List Price": 2051
+  },
+  {
+    "Product": "InsertionMag",
+    "A": "V",
+    "B": "5",
+    "C": "1",
+    "D": "2",
+    "9-Digit Code": "159002221",
+    "List Price": 2467
   }
 ]

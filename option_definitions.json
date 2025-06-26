@@ -3,7 +3,7 @@
     "Product": "Enclosure-9900",
     "Parameter": "A",
     "Code": "E",
-    "Description": "Enclosure with Clear Door Cover",
+    "Description": "Compact Enclosure with Clear Door Cover, 11.7 x 15.7 x 6.3 in",
     "Image URL": "pics/Enclosure_NBE.png"
   },
   {
@@ -53,7 +53,8 @@
     "Product": "Enclosure-9900",
     "Parameter": "D",
     "Code": "1",
-    "Description": "Conductivity Module, 3-9900.394"
+    "Description": "Conductivity Module, 3-9900.394",
+    "Image URL": "pics/3-9900.394_ConductivityModule.png"
   },
   {
     "Product": "Enclosure-9900",
@@ -72,7 +73,8 @@
     "Product": "Enclosure-9900",
     "Parameter": "E",
     "Code": "1",
-    "Description": "Modbus Module, 3-9900.270-M2"
+    "Description": "Modbus Module, 3-9900.270-M2",
+    "Image URL": "pics/3-9900.270-M2_ModbusModule.png"
   },
   {
     "Product": "Enclosure-9900",
@@ -86,7 +88,8 @@
     "Product": "Enclosure-9900",
     "Parameter": "E",
     "Code": "3",
-    "Description": "HART"
+    "Description": "HART Module, 3-9900.395",
+    "Image URL": "pics/3-9900.395_HARTModule.png"
   },
   {
     "Product": "Enclosure-9900",
@@ -104,7 +107,7 @@
     "Product": "Enclosure-9950A",
     "Parameter": "A",
     "Code": "E",
-    "Description": "Enclosure with Clear Door Cover",
+    "Description": "Regular Enclosure with Clear Door Cover, 11.7 x 15.7 x 6.3 in",
     "Image URL": "pics/Enclosure_NBE.png"
   },
   {
@@ -168,25 +171,29 @@
     "Product": "Enclosure-9950A",
     "Parameter": "D",
     "Code": "1",
-    "Description": "Dual Channel 4-20 mA Output, 3-9950.398-2"
+    "Description": "Dual Channel 4-20 mA Output, 3-9950.398-2",
+    "Image URL": "pics/3-9950.398-2_DualChannel4-20mAOutputModule.png"
   },
   {
     "Product": "Enclosure-9950A",
     "Parameter": "D",
     "Code": "2",
-    "Description": "Single Channel Conductivity Module, 3-9950.394-1"
+    "Description": "Single Channel Conductivity Module, 3-9950.394-1",
+    "Image URL": "pics/3-9950.394-1_SingleChannelConductivityModule.png"
   },
   {
     "Product": "Enclosure-9950A",
     "Parameter": "D",
     "Code": "3",
-    "Description": "Two Channel Conductivity Module, 3-9950.394-2"
+    "Description": "Two Channel Conductivity Module, 3-9950.394-2",
+    "Image URL": "pics/3-9950.398-2_DualChannelConductivityModule.png"
   },
   {
     "Product": "Enclosure-9950A",
     "Parameter": "D",
     "Code": "4",
-    "Description": "Modbus Module, 3-9950.395"
+    "Description": "Modbus Module, 3-9950.395",
+    "Image URL": "pics/3-9950.395-M_ModbusModule.png"
   },
   {
     "Product": "Enclosure-9950A",
@@ -198,19 +205,22 @@
     "Product": "Enclosure-9950A",
     "Parameter": "E",
     "Code": "1",
-    "Description": "Dual Channel 4-20 mA Output, 3-9950.398-2"
+    "Description": "Dual Channel 4-20 mA Output, 3-9950.398-2",
+    "Image URL": "pics/3-9950.398-2_DualChannel4-20mAOutputModule.png"
   },
   {
     "Product": "Enclosure-9950A",
     "Parameter": "E",
     "Code": "2",
-    "Description": "Single Channel Conductivity Module, 3-9950.394-1"
+    "Description": "Single Channel Conductivity Module, 3-9950.394-1",
+    "Image URL": "pics/3-9950.394-1_SingleChannelConductivityModule.png"
   },
   {
     "Product": "Enclosure-9950A",
     "Parameter": "E",
     "Code": "3",
-    "Description": "Two Channel Conductivity Module, 3-9950.394-2"
+    "Description": "Two Channel Conductivity Module, 3-9950.394-2",
+    "Image URL": "pics/3-9950.398-2_DualChannelConductivityModule.png"
   },
   {
     "Product": "Enclosure-9950A",
@@ -229,14 +239,14 @@
     "Product": "Enclosure-9950A",
     "Parameter": "F",
     "Code": "1",
-    "Description": "1 i-Go Analog to S3L Module, Wire Mount, 3-8058-1",
+    "Description": "i-Go Analog to S3L Module, Wire Mount, 3-8058-1",
     "Image URL": "pics/3-8058-1_iGo.png"
   },
   {
     "Product": "Enclosure-9950A",
     "Parameter": "F",
     "Code": "2",
-    "Description": "2 i-Go Analog to S3L Module, Wire Mount, 3-8058-1",
+    "Description": "2 x i-Go Analog to S3L Module, Wire Mount, 3-8058-1",
     "Image URL": "pics/3-8058-1_iGo_x2.png"
   },
   {
@@ -250,6 +260,12 @@
     "Parameter": "G",
     "Code": "1",
     "Description": "Single Channel Data Logger"
+  },
+  {
+    "Product": "Enclosure-9950A",
+    "Parameter": "G",
+    "Code": "2",
+    "Description": "2 x Single Channel Data Logger"
   },
   {
     "Product": "FlowtraMag",
@@ -324,5 +340,89 @@
     "Parameter": "D",
     "Code": "102",
     "Description": "EPDM"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "A",
+    "Code": "P",
+    "Description": "PP Body, 316L SS Electrodes"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "A",
+    "Code": "T",
+    "Description": "PVDF Body, Titanium Electrodes"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "A",
+    "Code": "V",
+    "Description": "PVDF Body, Hastelloy-C Electrodes"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "B",
+    "Code": "0",
+    "Description": "1/2 to 4 in"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "B",
+    "Code": "1",
+    "Description": "5 to 8 in"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "B",
+    "Code": "2",
+    "Description": "10 to 36 in"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "B",
+    "Code": "3",
+    "Description": "1/2 to 4 in, Wet Tap Assembly"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "B",
+    "Code": "4",
+    "Description": "5 to 8 in, Wet Tap Assembly"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "B",
+    "Code": "5",
+    "Description": "10 to 36 in, Wet Tap Assembly"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "C",
+    "Code": "1",
+    "Description": "No Display"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "C",
+    "Code": "2",
+    "Description": "with Display, One SPDT Relays, Two Solid State Relay"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "C",
+    "Code": "4",
+    "Description": "with Display"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "D",
+    "Code": "1",
+    "Description": "Frequency/Digital Output"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "D",
+    "Code": "2",
+    "Description": "4-20 mA Output"
   }
 ]

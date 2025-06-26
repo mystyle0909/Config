@@ -89,5 +89,25 @@
     "Product": "FlowtraMag",
     "Parameter": "D",
     "Name": "O-Ring"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "A",
+    "Name": "Sensor Body & Electrode"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "B",
+    "Name": "Pipe Length & Type"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "C",
+    "Name": "Display Options"
+  },
+  {
+    "Product": "InsertionMag",
+    "Parameter": "D",
+    "Name": "Output"
   }
 ]

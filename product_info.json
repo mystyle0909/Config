@@ -32,9 +32,17 @@
   {
     "Product": "FlowtraMag",
     "Display Name": "FlowtraMag",
-    "Description": "Electromagnetic flow meter",
+    "Description": "Full-bore electromagnetic flow meter",
     "Image URL": "pics/FlowtraMag.png",
     "Prefix": "3-2581-",
     "Part Number Format": "ABC-D"
+  },
+  {
+    "Product": "InsertionMag",
+    "Display Name": "Insertion Magmeter",
+    "Description": "Insertion electromagnetic flow meter",
+    "Image URL": "pics/InsertionMag.png",
+    "Prefix": "3-2551-",
+    "Part Number Format": "AB-CD"
   }
 ]
